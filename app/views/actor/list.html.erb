@@ -21,22 +21,27 @@
     <th>
     </th>
   </tr>
-  <% @directors.each do |person| %>
+<% @actors.each do |person| %>
   <tr>
     <td>
+      <%= person.id %>
     </td>
 
     <td>
+     <img src=<%= person.image %> style="width:250px">
     </td>
 
     <td>
+      <%= person.name %>
     </td>
 
     <td>
+      <%= person.dob %>
     </td>
 
     <td>
+      <a href="/actor/<%= person.id %>">Show details</a>
     </td>
   </tr>
-  <% end %>
+    <% end %>
 </table>
