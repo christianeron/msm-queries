@@ -1,5 +1,6 @@
 class ActorController < ApplicationController
   def list
+    @directors = Director.all
     render ({:template => "actor/list"})
   end
 
