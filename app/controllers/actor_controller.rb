@@ -4,7 +4,7 @@ class ActorController < ApplicationController
     render ({:template => "actor/list"})
   end
 
-  def details
+  def detail
     render ({:template => "actor/detail"})
   end
 end

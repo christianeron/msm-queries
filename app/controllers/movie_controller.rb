@@ -4,7 +4,7 @@ class MovieController < ApplicationController
     render ({:template => "movie/list"})
   end
 
-  def details
+  def detail
     render ({:template => "movie/detail"})
   end
 end
