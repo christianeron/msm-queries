@@ -8,9 +8,6 @@ class DirectorController < ApplicationController
     director_select = params.fetch("the_id")
     matching_records = Director.where({ :id => director_select })
     @the_director = matching_records.at(0)
-
-    @matching_films = Movie.where({:director_id => director_select})
-
     render ({:template => "director/detail"})
   end
 

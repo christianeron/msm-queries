@@ -79,7 +79,8 @@
     <th>
     </th>
   </tr>
-  <% @matching_films.each do |film| %>
+  <% matching_films = Movie.where({:director_id => @the_director.id}) %>%
+  <% matching_films.each do |film| %>
   <tr>
     <td>
       <%= film.id %>
